@@ -1,4 +1,6 @@
-package com.jxufe.mycontact;
+package com.jxufe.mycontact.contacts.activity;
+
+import com.jxufe.mycontact.R;
 
 import android.os.Bundle;
 import android.app.Activity;
