@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity 
-            android:name="com.jxufe.mycontact.login.activity.Login_Avtivity"></activity>
+            android:name="com.jxufe.mycontact.login.activity.LogIn_Aacitity"></activity>
      
     </application>
 

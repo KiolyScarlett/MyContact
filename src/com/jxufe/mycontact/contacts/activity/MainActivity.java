@@ -4,13 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
 
 import com.jxufe.mycontact.R;
-import com.jxufe.mycontact.login.activity.Login_Avtivity;
+import com.jxufe.mycontact.login.activity.LogIn_Aacitity;
 
 public class MainActivity extends Activity {
 	boolean IsLogIn = false;
@@ -21,20 +19,13 @@ public class MainActivity extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);  
         setContentView(R.layout.activity_main);
         
-        bt = (Button)findViewById(R.id.button);
-        bt.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				if(IsLogIn == true){
-		        	run();
-		        }
-		        else{
-		        	login();
-		        }
-			}
-		});
+        if(IsLogIn == true){
+        	run();
+        }
+        else{
+        	
+        	login();
+        }
         
     }
 
@@ -54,7 +45,7 @@ public class MainActivity extends Activity {
         return true;
     }
     public void login(){
-    	Intent login_intent =new Intent(MainActivity.this,Login_Avtivity.class);
+    	Intent login_intent =new Intent(MainActivity.this,LogIn_Aacitity.class);
     	this.startActivity(login_intent);
     }
     public void run(){
