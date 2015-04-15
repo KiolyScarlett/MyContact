@@ -22,7 +22,7 @@
                 style="@style/normalText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="用户名：" />
+                android:text="@string/login_label_username" />
 
             <EditText
                 android:id="@+id/user_name"
@@ -44,7 +44,7 @@
                 style="@style/normalText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="密    码：" />
+                android:text="@string/login_label_password" />
 
             <EditText
                 android:id="@+id/user_password"
@@ -62,11 +62,18 @@
             android:layout_height="wrap_content"
             android:layout_alignRight="@id/linearlayout2"
             android:layout_below="@id/linearlayout2"
-            
             android:text="@string/login_label_signin" />
     </RelativeLayout>
 
-    <RelativeLayout>
-    </RelativeLayout>
+   
+
+    <TextView
+        android:id="@+id/register_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/login_register_link"
+        android:textColor="#888"
+        android:textColorLink="#FF0066CC" />
 
 </LinearLayout>

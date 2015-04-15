@@ -22,6 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity 
+            android:name="com.jxufe.mycontact.login.activity.Login_Avtivity"></activity>
+     
     </application>
 
 </manifest>
