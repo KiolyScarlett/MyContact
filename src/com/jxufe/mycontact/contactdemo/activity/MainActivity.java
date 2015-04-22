@@ -1,4 +1,4 @@
-package com.jxufe.mycontact.contacts.activity;
+package com.jxufe.mycontact.contactdemo.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.view.Window;
 import android.widget.Button;
 
 import com.jxufe.mycontact.R;
-import com.jxufe.mycontact.login.activity.LogIn_Aacitity;
+import com.jxufe.mycontact.login.activity.LogIn_Activity;
 
 public class MainActivity extends Activity {
 	boolean IsLogIn = false;
@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
         return true;
     }
     public void login(){
-    	Intent login_intent =new Intent(MainActivity.this,LogIn_Aacitity.class);
+    	Intent login_intent =new Intent(MainActivity.this,LogIn_Activity.class);
     	this.startActivity(login_intent);
     }
     public void run(){
